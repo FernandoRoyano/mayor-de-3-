@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar número mayor</title>
+</head>
+<body>
+    
+        <h1>Instrucciones</h1>
+        <p>Este es un programa para encontrar el número mayor entre tres números que ingreses.</p>
+        <button onclick="findGreaterNumber()">Encuentra el número mayor</button>
+        <div id="result"></div>
+        <script>
+          function findGreaterNumber() {
+            let num1 = parseInt(prompt("Ingresa el primer número:"));
+            let num2 = parseInt(prompt("Ingresa el segundo número:"));
+            let num3 = parseInt(prompt("Ingresa el tercer número:"));
+          
+            let greaterNum = Math.max(num1, num2, num3);
+          
+            let result = document.getElementById("result");
+            result.innerHTML = "El número mayor es: " + greaterNum;
+          }
+        </script>
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
